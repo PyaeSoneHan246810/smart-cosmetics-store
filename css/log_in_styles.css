@@ -1,0 +1,39 @@
+/* variables */
+:root {
+    /* colors */
+    --BLACK: #000000;
+    --OFF_BLACK: #3A3A3A;
+    --OFF_BLACK_LIGHTER: #3e3e3e;
+    --GRAY: #D1D1D1;
+    --OFF_WHITE: #EFEFEF;
+    --WHITE: #ffffff;
+    --PALE_BROWN: #C0A080;
+
+    /* transition */
+    --TRANS: all .3s ease-in;
+}
+
+/* css resets */
+a {
+    text-decoration: none;
+    color: var(--OFF_BLACK);
+}
+
+a:hover {
+    color: var(--OFF_BLACK_LIGHTER);
+}
+
+/* log in section */
+#log_in, #sign_up {
+    color: var(--OFF_BLACK);
+    margin-top: 105px;
+    padding: 50px 0;
+}
+
+#log_in .forgot_text {
+    color: red;
+}
+
+#log_in .register_text:hover, #sign_up .log_in_text:hover {
+    color: var(--BLACK);
+}

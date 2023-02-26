@@ -1,0 +1,182 @@
+/* variables */
+:root {
+    /* colors */
+    --BLACK: #000000;
+    --OFF_BLACK: #3A3A3A;
+    --OFF_BLACK_LIGHTER: #3e3e3e;
+    --GRAY: #D1D1D1;
+    --OFF_WHITE: #EFEFEF;
+    --WHITE: #ffffff;
+    --PALE_BROWN: #C0A080;
+
+    /* transition */
+    --TRANS: all .3s ease-in;
+}
+
+/* css resets */
+a {
+    text-decoration: none;
+    color: var(--OFF_BLACK);
+}
+
+a:hover {
+    color: var(--OFF_BLACK_LIGHTER);
+}
+
+/* nav bar */
+.navbar {
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: var(--OFF_BLACK);
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.navbar .nav-link:hover {
+    transition: var(--TRANS);
+    opacity: 1;
+}
+
+.navbar .active {
+    opacity: 1;
+}
+
+.navbar .dropdown-item {
+    color: var(--OFF_BLACK);
+    opacity: 0.8;
+}
+
+.navbar .dropdown-item:hover {
+    transition: var(--TRANS);
+    background-color: var(--OFF_WHITE);
+    opacity: 1;
+}
+
+/* buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--OFF_BLACK);
+}
+
+.bth:hover {
+    transition: var(--TRANS);
+    background-color: var(--OFF_BLACK_LIGHTER);
+}
+
+/* hero session */
+#hero {
+    background: url(../images/home_page_hero_session.jpg) top/cover no-repeat;
+    color: var(--WHITE);
+    margin-top: 52.5px;
+    padding: 264px 0;
+}
+
+#hero .main_title {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#hero .sub_title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#hero .sign_in_button {
+    background-color: var(--WHITE);
+}
+
+#hero .sign_in_button:hover {
+    transition: var(--TRANS);
+    background-color: var(--OFF_WHITE);
+}
+
+#hero i {
+    margin-right: 5px;
+}
+
+/* sessions */
+#best_seller_items, #new_arrivals, #shop_image {
+    color: var(--OFF_BLACK);
+    padding-top: 100px;
+}
+
+/* new arrivals session  */
+#new_arrivals .image_container {
+    position: relative;
+}
+
+#new_arrivals .new_text {
+    display: inline-block;
+    color: var(--OFF_WHITE);
+    background-color: var(--OFF_BLACK);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding: 5px 10px;
+}
+
+#new_arrivals .image_container:hover .new_text{
+    transition: var(--TRANS);
+    background-color: var(--OFF_BLACK_LIGHTER);
+    transform: translateY(-0.25em);
+    padding: 6px 11px;
+}
+
+#new_arrivals .favorite_icon {
+    display: inline-block;
+    color: var(--OFF_WHITE);
+    background-color: var(--OFF_BLACK);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px 10px;
+}
+
+#new_arrivals .favorite_icon:hover {
+    transition: var(--TRANS);
+    color: var(--PALE_BROWN);
+}
+
+#new_arrivals .image_container:hover .favorite_icon{
+    transition: var(--TRANS);
+    background-color: var(--OFF_BLACK_LIGHTER);
+}
+
+/* brands section */
+#brands {
+    background-color: var(--OFF_WHITE);
+    margin-top: 100px;
+}
+
+/* footer section */
+#footer {
+    padding: 50px 0;
+}
+  
+/* media quarries */
+
+/* 426px */
+@media screen and (max-width: 426px) {
+    #hero .main_title {
+        font-size: 60px;
+    }
+    .navbar .icon {
+        padding: 8px;
+    }
+}
+
+/* 320px */
+@media screen and (max-width: 320px) {
+    #hero .main_title {
+        font-size: 50px;
+    }
+
+    #hero .btn {
+        display: none;
+    }
+}
